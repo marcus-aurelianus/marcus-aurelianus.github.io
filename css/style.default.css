@@ -325,15 +325,14 @@ INTRO
 }
 @media (min-width: 1200px) {
   .text-intro {
-    background-image: -webkit-linear-gradient(left, color-stop(#001922 20%),color-stop(#708D81 80%));
-    background-image: linear-gradient(to right, #001922 20%,#708D81 80%);
+    background-image: -webkit-gradient(linear,0% 0%, 100% 0%, from(#001922), to(#708D81));
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff7473', endColorstr='#ff46426f', GradientType=1);
   }
 }
 @media (max-width: 1199px) {
   .text-intro {
-    background: #001922f;
+    background: #001922;
   }
 }
 /*
@@ -1099,6 +1098,7 @@ STYLE SWITCHER FOR DEMO
   }
 }
 .navbar-brand {
+  position: absolute;
   float: left;
   padding: 10px 15px;
   font-size: 20px;
@@ -1896,7 +1896,7 @@ p.social a.instagram {
 }
 p.social a.email {
   background-color: #4a7f45;
-  border-color: #4a7f45;
+  border-color: #4a7f45;	
 }
 p.social a.link {
   background-color: #871AFF;
